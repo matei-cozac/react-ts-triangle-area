@@ -1,3 +1,21 @@
+# Matei Cozac's Triangle Problem Solution
+
+**Solution Overview**
+
+This project is a React TypeScript application that demonstrates basic component interaction and testing. The application includes three main functionalities:
+
+1. Number Display: Displays a sequence of numbers from 1 up to a specified maximum number.
+2. Triangle Area Calculation: Calculates and displays the area of a triangle based on user-provided height and width inputs.
+3. GitHub Actions CI/CD: Automatically runs tests on every push or pull request to the main branch to ensure code quality and functionality.
+   
+**Key Features**
+
+- Component-Based Architecture: The app is structured using reusable components (NumberDisplay and TriangleArea), following React best practices.
+- TypeScript: Utilizes TypeScript for type safety and improved code maintainability.
+- Testing: Includes comprehensive unit tests using @testing-library/react to ensure components work as expected.
+- Continuous Integration: Configured GitHub Actions to run tests automatically, enhancing the reliability of the development workflow.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
