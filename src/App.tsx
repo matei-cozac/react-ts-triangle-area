@@ -11,8 +11,9 @@ const App: React.FC = () => {
     return (
         <div className="App">
             <div>
-                <label>Max Number to Print</label>
+                <label htmlFor="maxNumber">Max Number to Print</label>
                 <input 
+                    id="maxNumber"
                     type="number" 
                     onChange={(e) => setMaxNumber(Number(e.target.value))}
                 />
@@ -20,15 +21,17 @@ const App: React.FC = () => {
             </div>
             <div className="input-group">
                 <div>
-                    <label>Height</label>
+                    <label htmlFor="height">Height</label>
                     <input 
+                        id="height"
                         type="number" 
                         onChange={(e) => setHeight(Number(e.target.value))}
                     />
                 </div>
                 <div>
-                    <label>Width</label>
+                    <label htmlFor="width">Width</label>
                     <input 
+                        id="width"
                         type="number" 
                         onChange={(e) => setWidth(Number(e.target.value))}
                     />

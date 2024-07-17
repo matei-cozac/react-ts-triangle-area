@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { act } from 'react';
-
 import TriangleArea from '../components/TriangleArea';
 
 test('calculates and displays the area of the triangle', () => {
@@ -9,7 +8,3 @@ test('calculates and displays the area of the triangle', () => {
     });
     expect(screen.getByText(/The calculated area is 25/)).toBeInTheDocument();
 });
-
-
-
-
