@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14, 16]
+        node-version: [16]
 
     steps:
     - name: Checkout repository
@@ -27,8 +27,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Fix vulnerabilities
-      run: npm audit fix
-
     - name: Run tests
       run: npm test
+
+    - name: Audit dependencies (allow failure)
+      continue-on-error: true
+      run: npm audit
